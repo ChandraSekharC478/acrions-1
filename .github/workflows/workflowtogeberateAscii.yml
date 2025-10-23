@@ -7,7 +7,7 @@ jobs:
             - name: checkout to main
               uses: actions/checkout@v5
             - name: list the file in repo
-              run: ls -ltr
+              run: ls -ltra
             - name: Executing the job
               run: |
                   chmod +x ascii-script.sh
