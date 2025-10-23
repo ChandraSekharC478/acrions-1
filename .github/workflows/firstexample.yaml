@@ -5,9 +5,12 @@ jobs:
   first_job:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout the branch
+        uses: actions/checkout@v5
+       
       - name: welcome message
         run: echo "i am githubworkflow"
       - name: list the files 
         run: ls 
       - name: read the files
-        run: cat README.md
+        run: cat /Users/chandrasekkhar/Desktop/githubactions/acrions-1/.github/workflows
