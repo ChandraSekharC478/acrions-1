@@ -1,0 +1,20 @@
+name: generate Ascii value
+on: push
+jobs:
+    Ascii_value_generation:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout to main
+              uses: actions/checkout@v5
+            - name: install the Cowsay
+              run: sudo apt-get install cowsay -y
+            - name: Execute Cowsay CMD
+              run: cowsay -f dragon "Run for cover , I am a DRAGON...RAWR">> dragon.txt
+            - name: text files exists
+              run: grep -i "dragon" dragon.txt
+
+            - name: Read File
+              run: cat dragon.txt
+
+            - name: list Repo files
+              run: ls -ltra
