@@ -6,5 +6,9 @@ jobs:
         steps:
             - name: checkout to main
               uses: actions/checkout@v5
+            - name: list the file in repo
+              run: ls -ltr
             - name: Executing the job
-              run: ./ascii-script.sh
+              run: |
+                  chmod +x ascii-script.sh
+                  ./ascii-script.sh
