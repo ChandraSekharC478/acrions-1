@@ -1,0 +1,13 @@
+name: checkout the branch
+on: push
+jobs:
+    checkout_to_main:
+        runs-on: ubuntu-latest
+        steps:
+        - name: checkout the branch
+          uses: actions/checkout@v5
+        - name: list the files
+          run: ls
+        - name: read the files
+          run : cat README.MD
+

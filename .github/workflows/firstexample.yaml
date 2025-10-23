@@ -13,4 +13,4 @@ jobs:
       - name: list the files 
         run: ls 
       - name: read the files
-        run: cat /Users/chandrasekkhar/Desktop/githubactions/acrions-1/.github/workflows
+        run: cat README.md
